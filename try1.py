@@ -30,11 +30,6 @@ def delete_data(name):
     response = requests.post(URL, json={"action": "delete", "name": name})
     return response.text
 
-# Auto-refresh setiap 30 detik
-refresh_interval = 30  # Dalam detik
-if "last_refresh" not in st.session_state:
-    st.session_state.last_refresh = time.time()
-
 # Mengambil data
 data = fetch_data()
 
