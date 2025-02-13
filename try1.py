@@ -2,6 +2,8 @@ import streamlit as st
 import requests
 import pandas as pd
 
+st.set_page_config(page_title="Dashboard", layout="wide")
+
 # URL dari Google Apps Script
 URL = "https://script.google.com/macros/s/AKfycbwUvfuuwN00Tub-EKkBkawWBCO6TbFApfwST-1lJPmEldejbeWlHN1QHRwlCStgBZZs/exec"
 
